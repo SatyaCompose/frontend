@@ -1,0 +1,91 @@
+/* NotificationForm.css */
+.form-div{
+    width: 150vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.notification-form {
+    background-color: #DFF0D8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    width: 100vh;
+    min-height: 50vh;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.css-b62m3t-container{
+    min-width: 35vh;
+    width: fit-content;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.css-svrb9o-control {
+    cursor: default;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: 40px !important;
+    position: relative;
+    transition: all 100ms;
+    background-color: hsl(0, 0%, 100%);
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #ccc !important;
+}
+
+.notification-form input,
+.notification-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: large !important;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    resize: vertical;
+}
+
+.notification-form textarea{
+    min-height: 30vh;
+}
+
+.notification-form select:focus,
+.notification-form input:focus,
+.notification-form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.notification-form button {
+    width: 25%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.notification-form button:hover {
+    background-color: #3e8e41;
+}

@@ -1,0 +1,208 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #DFF0D8;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 20px;
+    width: 120px;
+    /* Same as logo width */
+    height: 120px;
+    /* Same as logo height */
+    border-radius: 50%;
+    /* Makes container circular */
+    overflow: hidden;
+    /* Ensures logo stays within circle */
+    border: 2px solid #DFF0D8;
+    /* Circular border around logo */
+}
+
+/* Logo Styling */
+.Logo {
+    width: 100%;
+    /* Fills the container */
+    height: 100%;
+    /* Fills the container */
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Zoom Effect */
+.Logo.zoomed {
+    object-position: center;
+    transform: scale(1.3);
+    /* Adjust scale as needed */
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.profile-container {
+    display: flex;
+    cursor: 'pointer';
+    align-items: center;
+}
+
+.css-18k2bs-MuiAvatar-root {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-left: 40px;
+    margin-right: 20px;
+    width: 80px !important;
+    height: 80px !important;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #fff;
+    background-color: #bdbdbd;
+}
+
+.notification-container {
+    display: flex;
+    margin-right: '20px' !important;
+    cursor: 'pointer' !important;
+    justify-content: space-between !important
+}
+
+.company-name {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.content-area {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: #DFF0D8;
+    /* Light green shade */
+    color: black;
+    width: 150px auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 80vh;
+}
+
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-list li {
+    margin: 15px 0;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.menu-list li:hover {
+    color: black;
+}
+
+/* Main content area next to the sidebar */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #F9F9F9;
+    /* Optional background for main content */
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: black;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: green;
+}
+
+/* Dashboard.css */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns */
+    grid-template-rows: repeat(2, auto);
+    /* Two rows with automatic height */
+    gap: 20px;
+    /* Space between the boxes */
+    padding: 20px;
+    /* Padding around the grid */
+}
+
+.box {
+    background-color: white;
+    /* Light gray background */
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+    /* Rounded corners */
+    padding: 20px;
+    /* Padding inside boxes */
+    display: flex;
+    /* Flexbox for content alignment */
+    flex-direction: column;
+    /* Column direction */
+    justify-content: center;
+    /* Center content vertically */
+    align-items: center;
+    /* Center content horizontally */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Shadow for depth */
+}
+
+.box h2 {
+    margin: 0;
+    /* Remove default margin */
+}
